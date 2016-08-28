@@ -8,15 +8,13 @@ var NavigationBar = React.createClass({
                    <div className="menu">
                      <img src={require('../images/logo_launch_design_white.png')} className="nav-logo"/>
                    </div>
-                 </div>
-                 <div className="top-bar-right">
-                    <ul className="menu">
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">About</a></li>
-                      <li><a href="#">Portfolio</a></li>
-                      <li><a href="#">Contact</a></li>
+                   <ul className="menu">
+                      <li><a href="#">HOME</a></li>
+                      <li><a href="#">ABOUT</a></li>
+                      <li><a href="#">PORTFOLIO</a></li>
+                      <li><a href="#">CONTACT</a></li>
                     </ul>
-                  </div>
+                 </div>
                </div>
              );
     }
