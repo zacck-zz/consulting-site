@@ -24,9 +24,12 @@ module.exports =  {
   resolve: {
     //where all this needs to happen
     root: __dirname,
+    modulesDirectories: [
+      'node_modules',
+      './app/components'
+    ],
     alias: {
       applicationStyles: 'app/styles/app.scss',
-      Main: 'app/components/Main.jsx'
     },
     //files we want to process
     extensions: ['', '.js', '.jsx']
