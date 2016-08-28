@@ -1,5 +1,6 @@
 @import "base/variables";
 @import "/components/navbar";
+@import "/components/landingpage";
 
 //Foundation
 @import "base/foundation-settings";
@@ -8,6 +9,4 @@
 
 .body-row {
   min-width: 100%;
-  padding-right: 1rem;
-  padding-left: 1rem;
 }

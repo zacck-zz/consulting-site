@@ -6,7 +6,7 @@ var NavigationBar = require('NavigationBar');
 var LandingPage = React.createClass({
     render: function() {
        return(
-               <div className="row">
+               <div className="landing-page">
                 <NavigationBar/>
                </div>
              );
