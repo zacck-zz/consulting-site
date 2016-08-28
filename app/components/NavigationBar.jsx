@@ -6,7 +6,7 @@ var NavigationBar = React.createClass({
                <div className="top-bar">
                  <div className="top-bar-left">
                    <div className="menu">
-                     <img src={require('../images/logo_launch_design_white.png')}/>
+                     <img src={require('../images/logo_launch_design_white.png')} className="nav-logo"/>
                    </div>
                  </div>
                </div>

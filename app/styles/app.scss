@@ -1,6 +1,13 @@
 @import "base/variables";
+@import "/components/navbar";
 
 //Foundation
 @import "base/foundation-settings";
 @import "foundation";
 @include foundation-everything;
+
+.body-row {
+  min-width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}

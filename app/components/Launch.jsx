@@ -7,7 +7,7 @@ var NavigationBar = require('NavigationBar');
 var Launch = (props) => {
   return (
     <div>
-        <div className="row">
+        <div className="row body-row">
             {props.children}
         </div>
     </div>
