@@ -1,13 +1,18 @@
 var React = require('react');
 
 //components needed
-var NavigationBar = require('NavigationBar');
+var LandingHeader = require('LandingHeader');
+var AboutUs = require('AboutUs');
+var WhatWeDo = require('WhatWeDo');
+
 
 var LandingPage = React.createClass({
     render: function() {
        return(
-               <div className="landing-page">
-                <NavigationBar/>
+               <div>
+                 <LandingHeader/>
+                 <AboutUs/>
+                 <WhatWeDo/>
                </div>
              );
     }
