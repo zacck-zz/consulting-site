@@ -7,12 +7,13 @@ const PORT = process.env.PORT || 3000;
 
 //HTTPS TO HTTP
 app.use(function (req, res, next){
-  //if over http
+  /*if over http
   if(req.headers['x-forwarded-proto'] ===  'http') {
     res.redirect('https://'+req.hostname +req.url);
   } else {
     next();
   }
+  */
 });
 
 //show app folder to serve
