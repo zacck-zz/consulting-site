@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+var OfflinePlugin = require('offline-plugin');
 
 module.exports =  {
   //find this file and start from there
@@ -15,6 +16,18 @@ module.exports =  {
     new webpack.ProvidePlugin({
       '$':'jquery',
       'jQuery':'jquery'
+    }),
+    new OfflinePlugin({
+      caches: 'all',
+      publicPath:'',
+      updateStrategy: 'all',
+      version: 'v1',
+      ServiceWorker: {
+        output: 'sw.js'
+      },
+      AppCache: {
+        directory: 'appcache/'
+      }
     })
   ],
   output: {

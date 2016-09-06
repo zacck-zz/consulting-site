@@ -6,6 +6,7 @@ var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 //add components
 var Launch = require('Launch');
 var LandingPage = require('LandingPage');
+require('offline-plugin/runtime').install();
 
 
 //app css require
