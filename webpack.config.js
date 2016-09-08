@@ -17,18 +17,6 @@ module.exports =  {
       '$':'jquery',
       'jQuery':'jquery'
     }),
-    new OfflinePlugin({
-      caches: 'all',
-      publicPath:'',
-      updateStrategy: 'all',
-      version: 'v1',
-      ServiceWorker: {
-        output: 'sw.js'
-      },
-      AppCache: {
-        directory: 'appcache/'
-      }
-    })
   ],
   output: {
     path: __dirname,
@@ -70,5 +58,4 @@ module.exports =  {
       path.resolve(__dirname, "./node_modules/compass-mixins/lib")
     ]
   },
-  devtool: 'cheap-module-eval-source-map'
 };
