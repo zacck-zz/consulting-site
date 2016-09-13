@@ -2,6 +2,9 @@ var webpack = require('webpack');
 var path = require('path');
 var OfflinePlugin = require('offline-plugin');
 
+//add environment variable
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+
 module.exports =  {
   //find this file and start from there
   entry: [
@@ -17,10 +20,10 @@ module.exports =  {
       '$':'jquery',
       'jQuery':'jquery'
     }),
-    new webpack.DefinePlugin({
-    'process.env': {
-      'NODE_ENV': JSON.stringify('production')
-    }
+    new webpack.optimize.UglifyJsPlugin({
+      compressor: {
+        warnings: false
+      }
     })
   ],
   output: {
@@ -62,5 +65,6 @@ module.exports =  {
       path.resolve(__dirname, './node_modules/foundation-sites/scss'),
       path.resolve(__dirname, "./node_modules/compass-mixins/lib")
     ]
-  },
+  },/*only load the source maps if not production*/
+  devtool: process.env.NODE_ENV === 'production' ? undefined : 'cheap-module-eval-source-map'
 };
