@@ -3,10 +3,13 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 //ES6 Destructuting syntax
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
+var {Provider} = require('react-redux');
 //add components
 var Launch = require('Launch');
 var LandingPage = require('LandingPage');
 //require('offline-plugin/runtime').install();
+
+var store = {};
 
 
 //app css require
@@ -14,12 +17,14 @@ require('style!css!sass!applicationStyles');
 
 //Create our Router
 ReactDOM.render(    //pass two args, JSX and the app element
-  <Router history={hashHistory}>
-    {/*Main component will always be rendered*/}
-    <Route path="/" component={Launch}>
-      {/*Add Routes here */}
-      <IndexRoute component={LandingPage}/>
-    </Route>
-  </Router>,
+  <Provider store={store}>
+    <Router history={hashHistory}>
+      {/*Main component will always be rendered*/}
+      <Route path="/" component={Launch}>
+        {/*Add Routes here */}
+        <IndexRoute component={LandingPage}/>
+      </Route>
+    </Router>
+  </Provider>,
   document.getElementById('app') //where to render
 );

@@ -4,6 +4,7 @@ var React = require('react');
 var LandingHeader = require('LandingHeader');
 var AboutUs = require('AboutUs');
 var WhatWeDo = require('WhatWeDo');
+import OurPortfolio from 'OurPortfolio';
 
 
 var LandingPage = React.createClass({
@@ -13,6 +14,7 @@ var LandingPage = React.createClass({
                  <LandingHeader/>
                  <AboutUs/>
                  <WhatWeDo/>
+                 <OurPortfolio/>
                </div>
              );
     }
