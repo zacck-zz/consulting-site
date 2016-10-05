@@ -11,18 +11,22 @@ export var OurPortfolio = React.createClass({
                    <div className="port-item text-center columns small-12 medium-3 large-3">
                      <img className="port-image" src={require('../images/web_design.jpg')}/>
                      <p className="port-label">WEB DESIGN</p>
+                     <p className="port-link">CLICK HERE</p>
                    </div>
                    <div className="port-item text-center columns small-12 medium-3 large-3">
                      <img className="port-image" src={require('../images/web_dev.jpg')}/>
                      <p className="port-label">WEB DEVELOPMENT</p>
+                     <p className="port-link">CLICK HERE</p>
                    </div>
                    <div className="port-item text-center columns small-12 medium-3 large-3">
                      <img className="port-image" src={require('../images/creative.jpg')}/>
                      <p className="port-label">CONCEPTS</p>
+                     <p className="port-link">CLICK HERE</p>
                    </div>
                    <div className="port-item text-center columns small-12 medium-3 large-3">
                      <img className="port-image" src={require('../images/mobile_apps_one.jpg')}/>
                      <p className="port-label">MOBILE APPS</p>
+                     <p className="port-link">CLICK HERE</p>
                    </div>
                  </div>
 
