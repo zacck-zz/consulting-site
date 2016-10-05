@@ -22,7 +22,7 @@ var AboutUs = React.createClass({
               <p className="work-philosophy">I love pretty things & making ugly things pretty</p>
           </div>
           <div className="small-12 medium-4 large-4 columns text-center">
-            <img  className="about-pic"/>
+            <img src={require('../images/craig.jpg')} className="about-pic"/>
               <p className="profile-title">THE RUNNER</p>
               <p className="profile-name">CRAIG MAGADA</p>
               <p className="work-philosophy">I like making sure everything happens on time and as it should</p>
