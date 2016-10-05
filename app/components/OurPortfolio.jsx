@@ -1,12 +1,26 @@
 import React from 'react';
-import {connect} from 'react-redux';
 export var OurPortfolio = React.createClass({
     render: function() {
        return(
-               <div>
-                <p>OurPortfolio  Component</p>
+               <div className="our-portfolio">
+                 <div className="text-center">
+                   <p className="portfolio-section-title">OUR PORTFOLIO</p>
+                   <hr className="port-border"/>
+                 </div>
+                 <div className="row">
+                   <div>
+
+                   </div>
+                   <div>
+
+                   </div>
+                   <div>
+                     
+                   </div>
+                 </div>
+
                </div>
              );
     }
 });
-export default connect()(OurPortfolio);
+export default (OurPortfolio);
