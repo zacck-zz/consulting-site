@@ -16,11 +16,13 @@ var AboutUs = React.createClass({
             <p className="work-philosophy">I like finding simple solutions to very difficult problems</p>
           </div>
           <div className="small-12 medium-4 large-4 columns text-center">
+            {/*
             <img src={require('../images/marike_designer.jpg')} className="about-pic"/>
               <p className="profile-title">THE DESIGNER</p>
               <p className="profile-name">MARIKER CRONJE</p>
               <p className="work-philosophy">I love pretty things & making ugly things pretty</p>
           </div>
+          */}
           <div className="small-12 medium-4 large-4 columns text-center">
             <img src={require('../images/craig.jpg')} className="about-pic"/>
               <p className="profile-title">THE RUNNER</p>
