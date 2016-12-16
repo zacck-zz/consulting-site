@@ -13,7 +13,9 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 //import router
 import router from './router/'
 
-//add router and render from router
+//add and apply our styles
+
+
 
 //start inject pluging
 injectTapEventPlugin();
