@@ -15,13 +15,16 @@ import router from './router/'
 
 //add and apply our styles
 
+//temp add Main to work on pages
+import Main from 'Main'
+
 
 
 //start inject pluging
 injectTapEventPlugin();
 ReactDOM.render(
   <MuiThemeProvider>
-    {router}
+    <Main/>
   </MuiThemeProvider>,
   document.getElementById('app')
 );
