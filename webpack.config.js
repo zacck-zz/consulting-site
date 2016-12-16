@@ -9,4 +9,7 @@ module.exports = {
     path: __dirname + '/dist', // /dist is the destination of the bundle
     filename: '[name].bundle.js',
   },
+  devServer: {
+    contentBase: __dirname + '/src',
+  },
 };
