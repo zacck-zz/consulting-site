@@ -1,10 +1,11 @@
+'use strict'
 var webpack = require('webpack');
 
 module.exports = {
   //webpack reads the entry or entries from here
   context: __dirname + '/src', //__dirname is the root of the project and src is the source
   entry: {
-    app:'./app.js',
+    app:'./app.jsx',
   },
   //wepack dumps it compiled output here
   output: {
