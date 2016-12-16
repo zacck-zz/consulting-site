@@ -16,7 +16,7 @@ app.use(function (req, res, next){
 });
 
 //show app folder to serve
-app.use(express.static('public')); // specifies a a folder name to expose
+app.use(express.static('dist')); // specifies a a folder name to expose
 
 //start the server
 app.listen(PORT, function(){ // takes the port you are serving to and a function
