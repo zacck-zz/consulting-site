@@ -1,0 +1,22 @@
+{
+  "name": "launchdesign",
+  "version": "1.0.0",
+  "description": "this is our consulting website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zacck/consulting-site.git"
+  },
+  "keywords": [
+    "site"
+  ],
+  "author": "Zacck Osiemo",
+  "license": "MIT ",
+  "bugs": {
+    "url": "https://github.com/zacck/consulting-site/issues"
+  },
+  "homepage": "https://github.com/zacck/consulting-site#readme"
+}
