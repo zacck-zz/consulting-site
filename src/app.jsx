@@ -10,14 +10,16 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 //add a default theme to the app from material ui
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
+//import router
+import router from './router/'
 
-
+//add router and render from router
 
 //start inject pluging
 injectTapEventPlugin();
 ReactDOM.render(
   <MuiThemeProvider>
-    <LaunchBar/>
+    {router}
   </MuiThemeProvider>,
   document.getElementById('app')
 );

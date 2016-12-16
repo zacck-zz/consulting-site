@@ -39,6 +39,9 @@ module.exports = {
       "node_modules",
       "./src/components"
     ],
+    alias: {
+      src:'src',
+    },
     extensions: [".js", ".jsx"],
   },
   //to run the dev server
