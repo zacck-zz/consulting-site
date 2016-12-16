@@ -20,7 +20,7 @@ app.use(express.static(__dirname +'/dist')); // specifies a a folder name to exp
 
 //security stuff
 app.get('/.well-known/acme-challenge/:content', function(req, res){
-  res.send('K5FinW2SOSaX22rGfuWWrM-I3WpLf2kLHhPVNHcAzoY')
+  res.send('blMPotFMNXCjvThGFcSVPKdgtNkibRWY0jgDUxGHclA.zPkW8YHWcnFzxlXv4QBLG87lSCbw_KunsO076Bmk9y8')
 })
 
 //start the server
