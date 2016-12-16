@@ -18,6 +18,11 @@ app.use(function (req, res, next){
 //show app folder to serve
 app.use(express.static(__dirname +'/dist')); // specifies a a folder name to expose
 
+//security stuff
+app.get('/.well-known/acme-challenge/:content', function(req, res){
+  res.send('K5FinW2SOSaX22rGfuWWrM-I3WpLf2kLHhPVNHcAzoY')
+})
+
 //start the server
 app.listen(PORT, function(){ // takes the port you are serving to and a function
   console.log('Express Server is up on port ' + PORT);//log top console
