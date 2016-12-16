@@ -1,6 +1,10 @@
 'use strict'
 var webpack = require('webpack');
 
+//enviroment variable
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+
+
 module.exports = {
   //webpack reads the entry or entries from here
   context: __dirname + '/src', //__dirname is the root of the project and src is the source
@@ -60,8 +64,8 @@ module.exports = {
       '$':'jquery',
       'jQuery':'jquery'
     }),
+    
   ],
-
   //to run the dev server
   devServer: {
     contentBase: __dirname + '/src',
