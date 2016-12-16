@@ -1,11 +1,13 @@
 import React, {Component} from 'react'
+import AppBar from 'material-ui/AppBar'
 
 export class LaunchBar extends Component {
   render() {
     return(
-      <div>
-        <p>Launch Bar</p>
-      </div>
+      <AppBar
+        title="Launch Design"
+        iconClassNameRight="muidocs-icon-navigation-expand-more"
+      />
     );
   }
 };
