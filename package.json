@@ -4,7 +4,7 @@
   "description": "this is our consulting website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "NODE_ENV=test karma start",
     "start": "node server.js",
     "build": "npm run build"
   },
@@ -28,6 +28,7 @@
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
     "css-loader": "^0.26.1",
+    "express": "^4.14.0",
     "file-loader": "^0.9.0",
     "foundation-sites": "6.2.0",
     "jquery": "2.2.1",
