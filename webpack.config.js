@@ -10,14 +10,25 @@ module.exports = {
     filename: '[name].bundle.js',
   },
   module: {
-    rules: {
-      test: /\.js$/, //check for all js files
-      use: [{
-        loader: 'babel-loader',
-        options: {presets: ['es2015']}
-      }]
-    },
-  }
+    rules: [
+      {
+        test: /\.(js|jsx)$/, //check for all js files
+        use: [{
+          loader: 'babel-loader',
+          options: {presets: ['es2015', 'react', 'stage-0']}
+        }]
+      },
+      {
+        test: /\.(sass|scss)$/, //check for sass or scss file names
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
+      },
+    ]
+
+  },
   //to run the dev server
   devServer: {
     contentBase: __dirname + '/src',
