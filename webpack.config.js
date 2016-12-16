@@ -9,6 +9,16 @@ module.exports = {
     path: __dirname + '/dist', // /dist is the destination of the bundle
     filename: '[name].bundle.js',
   },
+  module: {
+    rules: {
+      test: /\.js$/, //check for all js files
+      use: [{
+        loader: 'babel-loader',
+        options: {presets: ['es2015']}
+      }]
+    },
+  }
+  //to run the dev server
   devServer: {
     contentBase: __dirname + '/src',
   },
