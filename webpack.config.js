@@ -61,8 +61,11 @@ module.exports = {
       'jQuery':'jquery'
     }),
   ],
+
   //to run the dev server
   devServer: {
     contentBase: __dirname + '/src',
   },
+  /*only load the source maps if not production*/
+  devtool: process.env.NODE_ENV === 'production' ? undefined : 'cheap-module-eval-source-map'
 };

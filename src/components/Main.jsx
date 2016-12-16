@@ -2,6 +2,7 @@ import React,{Component} from 'react'
 import LaunchBar from 'LaunchBar'
 import LandingCard from 'LandingCard'
 import AboutUs from 'AboutUs'
+import Services from 'Services'
 
 export class Main extends Component {
   constructor(props) {
@@ -13,6 +14,7 @@ export class Main extends Component {
         <LaunchBar/>
         <LandingCard/>
         <AboutUs/>
+        <Services/>
       </div>
     );
   }
