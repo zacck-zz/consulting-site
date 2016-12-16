@@ -33,6 +33,14 @@ module.exports = {
     ]
 
   },
+  //finding app modules
+  resolve: {
+    modules: [
+      "node_modules",
+      "./src/components"
+    ],
+    extensions: [".js", ".jsx"],
+  },
   //to run the dev server
   devServer: {
     contentBase: __dirname + '/src',

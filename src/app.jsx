@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 
 ReactDOM.render(
   <div>
-    <p>hello there this is jsx now</p>
+    <p>App will load here</p>
   </div>,
   document.getElementById('app')
 );
