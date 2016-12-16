@@ -64,7 +64,6 @@ module.exports = {
       '$':'jquery',
       'jQuery':'jquery'
     }),
-    
   ],
   //to run the dev server
   devServer: {
