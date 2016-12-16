@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/zacck/consulting-site/issues"
   },
-  "homepage": "https://github.com/zacck/consulting-site#readme"
+  "homepage": "https://github.com/zacck/consulting-site#readme",
+  "dependencies": {
+    "webpack": "2.1.0-beta.25"
+  }
 }
