@@ -19,7 +19,7 @@ module.exports = {
         test: /\.(js|jsx)$/, //check for all js files
         use: [{
           loader: 'babel-loader',
-          options: {presets: ['es2015', 'react', 'stage-0']}
+          options: {presets: ['react', 'es2015', 'stage-0']}
         }]
       },
       {
@@ -33,12 +33,6 @@ module.exports = {
     ]
 
   },
-  resolve: {
-    modules: [
-      'node_modules',
-      '.src/components',
-    ]
-  }
   //to run the dev server
   devServer: {
     contentBase: __dirname + '/src',
