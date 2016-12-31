@@ -10,8 +10,8 @@ export class AboutUs extends Component {
   }
   render() {
     return (
-      <div className="row">
-        <div className="columns small-4 medium-4 large-4">
+      <div className="row about-us">
+        <div className="columns small-12 medium-4 large-4">
         <Card>
           <CardHeader
             title="Zacck Osiemo"
@@ -20,18 +20,19 @@ export class AboutUs extends Component {
           </CardHeader>
           <CardTitle title="The Web Developer"></CardTitle>
           <CardText>
-            I like finding simple solutions to very difficult problems
+            I like finding simple solutions to very difficult problems.
           </CardText>
         </Card>
       </div>
-      <div className="columns small-4 medium-4 large-4">
+      <div className="columns small-12 medium-4 large-4">
         <Card>
           <CardHeader
           title="Cronje Marike"
+          avatar={require("../images/coding.jpg")}
           ></CardHeader>
           <CardTitle title="The Designer"></CardTitle>
             <CardText>
-              I like making things pretty
+              I like making things pretty.
             </CardText>
         </Card>
       </div>
@@ -44,7 +45,7 @@ export class AboutUs extends Component {
           </CardHeader>
           <CardTitle title="The Runner"></CardTitle>
           <CardText>
-            I like making sure everything happens on time and as it should
+            I like making sure everything happens on time.
           </CardText>
         </Card>
       </div>
