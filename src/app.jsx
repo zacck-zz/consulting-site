@@ -15,9 +15,15 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme'
 //import router
 import router from './router/'
 
-//add and apply our styles
-import jQuery from 'jquery'
-$(document).foundation();
+//jquery ,foundation styles
+// load jquery and foundation in the window scope
+import 'script!jquery'
+import 'script!what-input'
+import 'script!foundation-sites'
+
+require('style!css!sass!./styles/app.scss')
+
+
 //temp add Main to work on pages
 import Main from 'Main'
 

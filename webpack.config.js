@@ -10,6 +10,8 @@ module.exports = {
   //webpack reads the entry or entries from here
   context: __dirname + '/src', //__dirname is the root of the project and src is the source
   entry: {
+    jquery: 'script!jquery/dist/jquery.min.js',
+    foundation: 'script!foundation-sites/dist/foundation.min.js',
     app: './app.jsx'
   },
   //wepack dumps it compiled output here
@@ -27,17 +29,6 @@ module.exports = {
           options: {presets: ['react', 'es2015', 'stage-0']}
         }],
         exclude: /(node_modules)/
-      },
-      {
-        test: /\.(sass|scss)$/, //check for sass or scss file names
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader'
-        ],
-        include: [
-          path.resolve(__dirname, './node_modules/foundation-sites/scss')
-        ]
       },
       {
         test: /\.(png|jpg|jpeg|gif|woff)$/,
@@ -72,11 +63,20 @@ module.exports = {
   devtool: process.env.NODE_ENV === 'production' ? undefined : 'cheap-module-eval-source-map',
   //add some plugins
   plugins: [
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
-      "window.jQuery": "jquery",
-      jquery: "jquery",
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+      }
+    }),
+    new webpack.LoaderOptionsPlugin({
+        test: /\.scss$/,
+        options: {
+          sassLoader: {
+            includePaths: [
+              path.resolve(__dirname, './node_modules/foundation-sites/scss')
+            ]
+          }
+        }
     })
   ],
 };
