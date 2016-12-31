@@ -1775,6 +1775,10 @@ forwarded@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.1.0.tgz#19ef9874c4ae1c297bcf078fde63a09b66a84363"
 
+foundation-sites-loader@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/foundation-sites-loader/-/foundation-sites-loader-1.0.1.tgz#c1a79028fd5017f533fde4f174acc01d1bd3de32"
+
 foundation-sites@6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/foundation-sites/-/foundation-sites-6.2.0.tgz#db2854ba1af588339f41337e9cc75c0513e32a6f"
@@ -3407,6 +3411,10 @@ range-parser@^1.0.3, range-parser@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e"
 
+raw-loader@~0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-0.5.1.tgz#0c3d0beaed8a01c966d9787bf778281252a979aa"
+
 rc@~1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/rc/-/rc-1.1.6.tgz#43651b76b6ae53b5c802f1151fa3fc3b059969c9"
@@ -3693,6 +3701,12 @@ sass-loader@^4.1.0:
 sax@~1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.1.tgz#7b8e656190b228e81a66aea748480d828cd2d37a"
+
+script-loader@0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/script-loader/-/script-loader-0.6.1.tgz#183c6103945aaf5134b46f03003b5ee2bad44ceb"
+  dependencies:
+    raw-loader "~0.5.1"
 
 select-hose@^2.0.0:
   version "2.0.0"

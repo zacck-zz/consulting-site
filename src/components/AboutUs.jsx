@@ -10,7 +10,8 @@ export class AboutUs extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="row">
+        <div className="columns small-4 medium-4 large-4">
         <Card>
           <CardHeader
             title="Zacck Osiemo"
@@ -22,6 +23,8 @@ export class AboutUs extends Component {
             I like finding simple solutions to very difficult problems
           </CardText>
         </Card>
+      </div>
+      <div className="columns small-4 medium-4 large-4">
         <Card>
           <CardHeader
           title="Cronje Marike"
@@ -31,6 +34,8 @@ export class AboutUs extends Component {
               I like making things pretty
             </CardText>
         </Card>
+      </div>
+      <div className="columns small-12 medium-4 large-4">
         <Card>
           <CardHeader
             title="Craig Magada"
@@ -42,6 +47,7 @@ export class AboutUs extends Component {
             I like making sure everything happens on time and as it should
           </CardText>
         </Card>
+      </div>
       </div>
     );
   }

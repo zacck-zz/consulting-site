@@ -16,11 +16,12 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import router from './router/'
 
 //add and apply our styles
-
+import jQuery from 'jquery'
+$(document).foundation();
 //temp add Main to work on pages
 import Main from 'Main'
 
-//build custom styles
+//build custom material-ui theme
 const muiTheme = getMuiTheme({
   palette: {
     primary1Color: "#df312e",
@@ -29,7 +30,6 @@ const muiTheme = getMuiTheme({
     height: 50,
   },
 });
-
 
 
 //start inject pluging
