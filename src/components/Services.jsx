@@ -8,8 +8,8 @@ export class Services extends Component {
   }
   render() {
     return(
-      <div>
-        <div>
+      <div className="services">
+        <div className="row cardrow">
         <div className="columns small-12 medium-6 large-6">
           <Card>
             <CardMedia
@@ -29,7 +29,7 @@ export class Services extends Component {
         </Card>
         </div>
         </div>
-        <div>
+        <div className="row cardrow">
         <div className="columns small-12 medium-6 large-6">
         <Card>
           <CardMedia>
