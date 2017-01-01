@@ -10,13 +10,17 @@ export class BottomBar extends Component {
   render() {
     return(
       <Toolbar>
-        <ToolbarGroup firstChild={true}>
-          <FlatButton label="+27 724 341 1105"/>
-        </ToolbarGroup>
+        <div className="columns large-6 small-6 medium-6">
+          <ToolbarGroup firstChild={true}>
+            <FlatButton label="+27 724 341 1105"/>
+          </ToolbarGroup>
+        </div>
         <ToolbarSeparator />
-        <ToolbarGroup>
-          <FlatButton label="info@launchdesign.co.za"/>
-        </ToolbarGroup>
+        <div className="columns large-6 small-6 medium-6">
+          <ToolbarGroup>
+            <FlatButton label="info@launchdesign.co.za"/>
+          </ToolbarGroup>
+        </div>
       </Toolbar>
     );
   }
