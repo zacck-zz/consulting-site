@@ -27,7 +27,7 @@ export class AboutUs extends Component {
       <div className="columns small-12 medium-4 large-4">
         <Card>
           <CardHeader
-          title="Cronje Marike"
+          title="Cheslin Siebritz"
           avatar={require("../images/coding.jpg")}
           ></CardHeader>
           <CardTitle title="The Designer"></CardTitle>
