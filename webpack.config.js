@@ -16,9 +16,9 @@ module.exports = {
   },
   //wepack dumps it compiled output here
   output: {
-    path: __dirname + '/dist/assets', // /dist is the destination of the bundle
+    path: __dirname + '/dist/old/assets', // /dist is the destination of the bundle
     filename: '[name].bundle.js',
-    publicPath: '/assets', //This works with webpack-dev-server
+    publicPath: '/old/assets', //This works with webpack-dev-server
   },
   module: {
     rules: [
@@ -55,7 +55,7 @@ module.exports = {
 
   //to run the dev server
   devServer: {
-    contentBase: __dirname + '/src',
+    contentBase: __dirname + '/dist',
   },
   //add externals for jquery
   externals: ['window'],
