@@ -5,7 +5,7 @@ var path = require('path');
 //enviroment variable
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
-
+he
 module.exports = {
   //webpack reads the entry or entries from here
   context: __dirname + '/src', //__dirname is the root of the project and src is the source
