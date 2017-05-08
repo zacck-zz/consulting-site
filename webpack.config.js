@@ -16,9 +16,9 @@ module.exports = {
   },
   //wepack dumps it compiled output here
   output: {
-    path: __dirname + '/dist/old/assets', // /dist is the destination of the bundle
+    path: __dirname + '/dist/assets', // /dist is the destination of the bundle
     filename: '[name].bundle.js',
-    publicPath: '/old/assets', //This works with webpack-dev-server
+    publicPath: '/assets', //This works with webpack-dev-server
   },
   module: {
     rules: [
