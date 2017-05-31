@@ -15,6 +15,10 @@ app.use(function (req, res, next){
   }
 });
 
+app.get('/.well-known/acme-challenge/:content', function(req, res) {
+ res.send('xt01Xb4jrB6ftQ_hFIKrFD610-2uUJaiscrPcegpsFU.zPkW8YHWcnFzxlXv4QBLG87lSCbw_KunsO076Bmk9y8')
+});
+
 
 //show app folder to serve
 app.use(express.static(__dirname +'/dist')); // specifies a a folder name to expose
