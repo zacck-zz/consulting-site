@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 3000;
 // });
 
 app.get('/.well-known/acme-challenge/:content', function(req, res) {
- res.send('hPuRQCoXH1a6coA1z7TcNAwtKBkwFL_uhr2XzjCy6qU.zPkW8YHWcnFzxlXv4QBLG87lSCbw_KunsO076Bmk9y8')
+ res.send('RwCb8pL9nTga0qeM0GBPFDFu_xqXE_kMFoPgS6hVYe4.zPkW8YHWcnFzxlXv4QBLG87lSCbw_KunsO076Bmk9y8')
 });
 
 
