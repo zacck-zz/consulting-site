@@ -1,0 +1,15 @@
+{
+  "name": "consulting-site",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "This is the consulting site for launch design done by taariq",
+  "main": "index.js",
+  "repository": "https://github.com/zacck/consulting-site.git",
+  "author": "Zacck Osiemo <coderv63@gmail.com> (http://zacck.github.io)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
