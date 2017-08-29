@@ -18,8 +18,9 @@ app.use(function (req, res, next){
 //show app folder to serve
 app.use(express.static(__dirname +'/dist')); // specifies a a folder name to expose
 
-
-
+app.get('/.well-known/acme-challenge/:content', function(req, res) {
+	res.send('jLYarHD3bocQqIQjZWRdLYjPPXmCGHD2KiU7LHhF4.zPkW8YHWcnFzxlXv4QBLG87lSCbw_KunsO076Bmk9y8')
+});
 
 //start the server
 app.listen(PORT, function(){ // takes the port you are serving to and a function
